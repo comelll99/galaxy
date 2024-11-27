@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galaksi Menakjubkan</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Quicksand', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #ffffff;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            transition: background-image 2s ease-in-out, background-color 2s ease-in-out;
+        }
+
+        .container {
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 15px;
+            padding: 40px;
+            width: 90%;
+            max-width: 1000px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        h1 {
+            font-family: 'Pacifico', cursive;
+            font-size: 48px;
+            margin-bottom: 20px;
+            color: #f39c12;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        h2 {
+            font-size: 26px;
+            margin-bottom: 15px;
+            color: #ecf0f1;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        .button {
+            background-color: #e74c3c;
+            color: white;
+            padding: 15px 25px;
+            font-size: 18px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            display: inline-block;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #c0392b;
+            transform: scale(1.1);
+        }
+
+        .content-section {
+            margin-top: 50px;
+        }
+
+        .content-section h2 {
+            color: #f39c12;
+        }
+
+        .content-section p {
+            color: #ecf0f1;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        /* Animasi Latar Belakang */
+        .background-change {
+            transition: background-color 3s ease-in-out, background-image 3s ease-in-out;
+        }
+
+        /* Peta Galaksi */
+        .galaxy-map {
+            margin-top: 30px;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .galaxy-map img {
+            width: 100%;
+            max-width: 700px;
+            border-radius: 10px;
+        }
+
+        /* Grid Layout */
+        .row {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+
+        .col {
+            flex: 1;
+            min-width: 280px;
+            margin-right: 20px;
+            margin-bottom: 20px;
+        }
+
+        /* Styling for the background change button */
+        #changeBackgroundBtn {
+            margin-top: 40px;
+            font-size: 20px;
+            padding: 12px 25px;
+            color: white;
+            background-color: #3498db;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #changeBackgroundBtn:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Menjelajah Keindahan Galaksi</h1>
+        <p>Selamat datang ke dunia galaksi yang penuh dengan keajaiban! Bersedia untuk meneroka langit yang penuh dengan misteri dan keindahan.</p>
+
+        <div class="row">
+            <div class="col">
+                <div class="content-section">
+                    <h2>Mengenai Galaksi</h2>
+                    <p>Galaksi adalah sistem bintang yang terikat dengan graviti. Setiap galaksi mengandungi berbilion-bilion bintang, planet, dan objek langit lain. Galaksi kita, Bima Sakti, adalah rumah kepada sistem solar kita.</p>
+                </div>
+
+                <div class="content-section">
+                    <h2>Fakta Menarik</h2>
+                    <p>Galaksi Bima Sakti mempunyai diameter sekitar 100,000 tahun cahaya dan mengandungi lebih daripada 200 bilion bintang! Selain itu, terdapat galaksi lain seperti Andromeda yang lebih besar dan lebih jauh.</p>
+                </div>
+
+                <div class="content-section">
+                    <h2>Penjelajahan Angkasa</h2>
+                    <p>Penjelajahan angkasa bermula dengan pelancaran satelit pertama, Sputnik 1. Kini, misi-misi ke Marikh dan lebih jauh lagi sedang dijalankan, membuka lebih banyak rahsia alam semesta untuk diterokai.</p>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="content-section">
+                    <h2>Petikan Ilmuwan Angkasa</h2>
+                    <p>"Keajaiban alam semesta adalah lebih daripada apa yang kita tahu, dan lebih banyak daripada apa yang kita bayangkan." - Carl Sagan</p>
+                </div>
+
+                <div class="galaxy-map">
+                    <h2>Peta Galaksi Bima Sakti</h2>
+                    <img src="image5.jpg?text=Peta+Galaksi+Bima+Sakti" alt="Peta Galaksi Bima Sakti">
+                    <p>Ini adalah peta galaksi kita yang menunjukkan struktur Bima Sakti dan kedudukan sistem solar kita.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <button id="changeBackgroundBtn">Tukar Warna Galaksi</button>
+        </div>
+
+        <a href="https://www.nasa.gov/" class="button" target="_blank">Jelajahi Lebih Lanjut</a>
+    </div>
+
+    <script>
+        // Gambar latar belakang yang berbeza
+        const backgrounds = [
+            "url('image1.jpg')",
+            "url('image2.jpg')",
+            "url('image3.jpg')",
+            "url('image4.jpg')"
+        ];
+
+        let currentBackgroundIndex = 0;
+
+        // Fungsi untuk menukar gambar latar belakang
+        function changeBackground() {
+            currentBackgroundIndex = (currentBackgroundIndex + 1) % backgrounds.length;
+            document.body.style.backgroundImage = backgrounds[currentBackgroundIndex];
+        }
+
+        // Tukar gambar latar belakang setiap 7 saat
+        setInterval(changeBackground, 7000);
+
+        // Tukar latar belakang apabila butang ditekan
+        document.getElementById('changeBackgroundBtn').addEventListener('click', () => {
+            changeBackground();
+        });
+
+        // Mula dengan gambar latar belakang pertama
+        changeBackground();
+    </script>
+</body>
+</html>
